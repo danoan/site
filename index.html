@@ -1,0 +1,39 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: main
+---
+
+<h2 class="post-list-heading">Featured Articles</h2>
+<ul class="post-list">
+
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        4-approximation algorithm for a whole class of optimization problems.
+      </a>
+    </h3>
+    The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
+    for a class of geometrical optimization problems.
+  </li>
+</ul>
+
+
+<h2 class="post-list-heading">Featured Projects</h2>
+<ul class="post-list">
+
+  <li>
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <h3>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        Digital Curvature Flow for Image Segmentation.
+      </a>
+    </h3>
+    Curvature regularization has been a difficult problem to tackle, but a
+    complete digital approach allows to recover beautiful results.
+  </li>
+</ul>

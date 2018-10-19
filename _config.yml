@@ -13,22 +13,31 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Daniel Martins Antunes
+subtitle: Personal webpage
+email: martinsantunes.daniel@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am a curious person and an endless learner. I create this page to
+  gather all my personal and professional information. Fell free to
+  contact me :)
 baseurl: "/site" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
+twitter_username: danoan
+github_username:  danoan
+skype_username: daniel.martins.antunes
+youtube_username: danoan_pop
+linkedin_username: daniel-antunes-54267118
+instagram_username: danoan
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+header_pages:
+  - cv.html
+  - academic.html
+  - development.html
+  - personal.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

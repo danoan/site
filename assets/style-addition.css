@@ -1,0 +1,9 @@
+.horizontal-list
+{
+  list-style: none;
+}
+.horizontal-list li
+{
+    float:left;
+    padding-left: 10pt;
+}

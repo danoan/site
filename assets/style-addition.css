@@ -7,3 +7,31 @@
     float:left;
     padding-left: 10pt;
 }
+
+.two-collumns *
+{
+  box-sizing: border-box;
+}
+
+.collumn
+{
+  float: left;
+  width:50%;
+}
+
+.margin-left
+{
+  margin-left: 50pt;
+}
+
+.margin-right
+{
+  margin-right: 50pt;
+}
+
+@media screen and (max-width: 600px ) {
+	.collumn {
+    float:none;
+    width:100%;
+  }
+}

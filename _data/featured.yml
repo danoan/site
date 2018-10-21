@@ -1,0 +1,46 @@
+articles:
+  -
+    title: State-of-art Quality Analysis for Geometric Hitting Set.
+    description: >
+      The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
+      for a class of geometrical optimization problems, among them the
+      Geometrical hitting set problem.
+    date: 2017-09-01
+    url: https://itiseasytoseethat.wordpress.com/2017/07/10/4-local-search-gives-a-4-approximation-algorithm-to-the-geometric-hitting-set-problem/
+
+  -
+    title: Bayesian Rational in Image Processing
+    description: >
+      We give two examples of how Bayesian rational can be used to interpret
+      methods on image denoising and regularization.
+    date: 2017-08-01
+    url: https://itiseasytoseethat.wordpress.com/2017/05/24/modeling-using-priors-guide-conception-image-denoising-model/
+
+  -
+    title: The tautochrone curve
+    description: >
+      Every ball positioned in such curve will reach the end of the curve at
+      the same time.
+    date: 2017-07-01
+    url: https://itiseasytoseethat.wordpress.com/2017/06/15/the-tautochrone-curve/
+
+projects:
+  -
+    title: Digital Curvature Flow
+    description: Improve segmentation results using curvature regularization.
+    date: 2018-10-01
+    git-repo: BTools
+
+  -
+    title: Simple traffic simulator
+    description: >
+      Simulate traffic of any available map at OpenStreetMap using
+      standard metrics of complex network.
+    date: 2015-07-01
+    git-repo: traffic-simulator
+
+  -
+    title: Viola-Jones Face Detector
+    description: Implementation suitable for parallelization with CUDA.
+    date: 2014-07-01
+    git-repo: faces-rec

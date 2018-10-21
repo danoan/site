@@ -5,35 +5,41 @@
 layout: main
 ---
 
-<h2 class="post-list-heading">Featured Articles</h2>
-<ul class="post-list">
+<div class="two-collums">
+  <div class="collumn margin-right">
+    <h2 class="post-list-heading">Featured Articles</h2>
+    <ul class="post-list">
 
-  <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        4-approximation algorithm for a whole class of optimization problems.
-      </a>
-    </h3>
-    The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
-    for a class of geometrical optimization problems.
-  </li>
-</ul>
+      {% for article in site.data.featured.articles %}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ article.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ article.url | relative_url }}">
+            {{article.title}}
+          </a>
+        </h3>
+        {{article.description}}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
-
-<h2 class="post-list-heading">Featured Projects</h2>
-<ul class="post-list">
-
-  <li>
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <span class="post-meta">{{ post.date | date: date_format }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        Digital Curvature Flow for Image Segmentation.
-      </a>
-    </h3>
-    Curvature regularization has been a difficult problem to tackle, but a
-    complete digital approach allows to recover beautiful results.
-  </li>
-</ul>
+  <div class="column">
+    <h2 class="post-list-heading">Featured Projects</h2>
+    <ul class="post-list">
+      {% for project in site.data.featured.projects %}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ project.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="https://github.com/danoan/{{ project.git-repo }}">
+            {{project.title}}
+          </a>
+        </h3>
+        {{project.description}}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

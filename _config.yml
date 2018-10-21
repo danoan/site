@@ -33,11 +33,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-header_pages:
-  - cv.html
-  - academic.html
-  - development.html
-  - personal.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

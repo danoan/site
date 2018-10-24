@@ -75,7 +75,7 @@ highlights:
   -
     title: Digital Curvature Flow
     icon: fa-code
-    type: code_project
+    type: coding
     bottom_link_text: More projects
     bottom_link_url: #
     description: Improve segmentation results using curvature regularization.

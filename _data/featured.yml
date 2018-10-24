@@ -1,6 +1,6 @@
 articles:
   -
-    title: State-of-art Quality Analysis for Geometric Hitting Set.
+    title: Quality Analysis of Geometric Hitting Set.
     description: >
       The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
       for a class of geometrical optimization problems, among them the
@@ -44,3 +44,40 @@ projects:
     description: Implementation suitable for parallelization with CUDA.
     date: 2014-07-01
     git-repo: faces-rec
+
+
+highlights:
+  -
+    title: Quality Analysis of Geometric Hitting Set.
+    icon: fa-flask
+    type: paper
+    bottom_link_text: More papers
+    bottom_link_url: #
+    description: >
+      The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
+      for a class of geometrical optimization problems, among them the
+      Geometrical hitting set problem.
+    date: 2017-09-01
+    url: https://itiseasytoseethat.wordpress.com/2017/07/10/4-local-search-gives-a-4-approximation-algorithm-to-the-geometric-hitting-set-problem/
+
+  -
+    title: Bayesian Rational in Image Processing
+    icon: fa-paperclip
+    type: post
+    bottom_link_text: More posts
+    bottom_link_url: #
+    description: >
+      We give two examples of how Bayesian rational can be used to interpret
+      methods on image denoising and regularization.
+    date: 2017-08-01
+    url: https://itiseasytoseethat.wordpress.com/2017/05/24/modeling-using-priors-guide-conception-image-denoising-model/
+
+  -
+    title: Digital Curvature Flow
+    icon: fa-code
+    type: code_project
+    bottom_link_text: More projects
+    bottom_link_url: #
+    description: Improve segmentation results using curvature regularization.
+    date: 2018-10-01
+    url: https://github.com/danoan/BTools

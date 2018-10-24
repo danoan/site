@@ -1,45 +1,54 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: main
 ---
 
-<div class="two-collums">
-  <div class="collumn margin-right">
-    <h2 class="post-list-heading">Featured Articles</h2>
-    <ul class="post-list">
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethereal by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="content/assets/css/main.css" />
+		<link rel="stylesheet" href="content/assets/css/extra.css" />
+		<noscript><link rel="stylesheet" href="content/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-      {% for article in site.data.featured.articles %}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ article.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ article.url | relative_url }}">
-            {{article.title}}
-          </a>
-        </h3>
-        {{article.description}}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<!-- Wrapper -->
+					<div id="wrapper">
 
-  <div class="column">
-    <h2 class="post-list-heading">Featured Projects</h2>
-    <ul class="post-list">
-      {% for project in site.data.featured.projects %}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ project.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="https://github.com/danoan/{{ project.git-repo }}">
-            {{project.title}}
-          </a>
-        </h3>
-        {{project.description}}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+						<!-- Panel (Banner) -->
+						{% for highlight in site.data.featured.highlights %}
+							<section class="panel banner right">
+								<div class="content {{highlight.type}} span-4-75">
+									<a class="main-link" href="{{highlight.url}}"
+										<h1 class="major"><ul class="header-icon"><li class="{{highlight.icon}} no-padding"></li><li>{{highlight.type | replace: "_", " " | capitalize}}</li></ul></h1>
+										<h2>{{highlight.title}}</h2>
+										{{highlight.description}}
+									</a>
+									<a href="{{highlight.bottom_link_url}}" class="bottom-link">{{highlight.bottom_link_text}}</a>
+								</div>
+							</section>
+						{% endfor %}
+
+						<!-- Copyright -->
+							<div class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="content/assets/js/jquery.min.js"></script>
+			<script src="content/assets/js/browser.min.js"></script>
+			<script src="content/assets/js/breakpoints.min.js"></script>
+			<script src="content/assets/js/main.js"></script>
+
+	</body>
+</html>

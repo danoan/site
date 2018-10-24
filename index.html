@@ -28,7 +28,7 @@
 							<h1>{{site.data.cover.title}}</h1>
 							<p>{{site.data.cover.subtitle}}</p>
 
-							<ul id="email-info" style="visibility:hidden;list-style:none;font-size:8pt"><li>martinsantunes.daniel@gmail.com</li></ul>							
+							<ul id="email-info" style="visibility:hidden;list-style:none;font-size:8pt"><li>martinsantunes.daniel@gmail.com</li></ul>
 						</header>
 
 						<footer>
@@ -37,9 +37,12 @@
 								<li><a id="email-link" onclick="document.getElementById('email-info').style.visibility='visible';" href="#" class="fa-envelope">Email</a></li>
 								<li><a href="{{site.data.cover.cv_url}}" class="fa-address-card">CV</a></li>
 								<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="fa-linkedin">LinkedIn</a></li>
+<!--
+								<li><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="fa-github">GitHub</a></li>
 								<li><a href="{{site.data.cover.blog_url}}" class="fa-wordpress">Blog</a></li>
 								<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="fa-twitter">Twitter</a></li>
 								<li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="fa-instagram">Instagram</a></li>
+-->
 							</ul>
 
 						</footer>

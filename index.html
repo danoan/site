@@ -1,45 +1,65 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: main
 ---
 
-<div class="two-collums">
-  <div class="collumn margin-right">
-    <h2 class="post-list-heading">Featured Articles</h2>
-    <ul class="post-list">
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Identity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="cover/assets/css/main.css" />
+		<link rel="stylesheet" href="cover/assets/css/extra.css" />
+		<noscript><link rel="stylesheet" href="cover/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-      {% for article in site.data.featured.articles %}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ article.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ article.url | relative_url }}">
-            {{article.title}}
-          </a>
-        </h3>
-        {{article.description}}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-  <div class="column">
-    <h2 class="post-list-heading">Featured Projects</h2>
-    <ul class="post-list">
-      {% for project in site.data.featured.projects %}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ project.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="https://github.com/danoan/{{ project.git-repo }}">
-            {{project.title}}
-          </a>
-        </h3>
-        {{project.description}}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="cover/images/avatar.jpg" alt="" /></span>
+							<h1>{{site.data.cover.title}}</h1>
+							<p>{{site.data.cover.subtitle}}</p>
+
+							<ul id="email-info" style="visibility:hidden;list-style:none;font-size:8pt"><li>martinsantunes.daniel@gmail.com</li></ul>							
+						</header>
+
+						<footer>
+							<ul class="icons">
+								<li><a href="{{site.data.cover.home_url}}" class="fa-home">Home</a></li>
+								<li><a id="email-link" onclick="document.getElementById('email-info').style.visibility='visible';" href="#" class="fa-envelope">Email</a></li>
+								<li><a href="{{site.data.cover.cv_url}}" class="fa-address-card">CV</a></li>
+								<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="fa-linkedin">LinkedIn</a></li>
+								<li><a href="{{site.data.cover.blog_url}}" class="fa-wordpress">Blog</a></li>
+								<li><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" class="fa-twitter">Twitter</a></li>
+								<li><a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}" class="fa-instagram">Instagram</a></li>
+							</ul>
+
+						</footer>
+					</section>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>

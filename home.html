@@ -22,7 +22,6 @@
 			<div id="page-wrapper">
 				<!-- Wrapper -->
 					<div id="wrapper">
-
 						<!-- Panel (Banner) -->
 						{% for highlight in site.data.featured.highlights %}
 							<section class="panel banner right">
@@ -43,6 +42,18 @@
 					</div>
 
 			</div>
+
+
+			<div class="top-menu">
+				<ul class="menu-icons">
+					<li><a href="/"><img src="content/images/avatar.jpg" /></a></li>
+					<li><a class="fa-address-card" href="/assets/cv2.pdf"></a></li>
+					<li><a class="fa-linkedin" href="https://linkedin.com/in/{{site.linkedin_username}}"></a></li>
+					<li><a class="fa-github" href="https://github.com/{{site.github_username}}"></a></li>
+					<li><a class="fa-wordpress" href="{{site.data.cover.blog_url}}"></a></li>
+				</ul>
+			</div>
+
 
 		<!-- Scripts -->
 			<script src="content/assets/js/jquery.min.js"></script>

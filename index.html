@@ -28,14 +28,13 @@
 							<h1>{{site.data.cover.title}}</h1>
 							<p>{{site.data.cover.subtitle}}</p>
 
-							<ul id="email-info" style="visibility:hidden;list-style:none;font-size:8pt"><li>martinsantunes.daniel@gmail.com</li></ul>
+							<ul id="email-info" style="visibility:hidden;list-style:none;font-size:8pt"><li>{{ site.email }}</li></ul>
 						</header>
 
 						<footer>
 							<ul class="icons">
 								<li><a href="{{site.data.cover.home_url}}" class="fa-home">Home</a></li>
 								<li><a id="email-link" onclick="document.getElementById('email-info').style.visibility='visible';" href="#" class="fa-envelope">Email</a></li>
-								<li><a href="" class="fa-address-card">CV</a></li>
 								<!-- <li><a href="{{site.data.cover.cv_url}}" class="fa-address-card">CV</a></li> -->
 
 								<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" class="fa-linkedin">LinkedIn</a></li>

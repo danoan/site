@@ -1,0 +1,188 @@
+---
+---
+
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Daniel Martins Antunes | Home</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="content/assets/css/main.css" />
+		<link rel="stylesheet" href="content/assets/css/extra.css" />
+		<noscript><link rel="stylesheet" href="content/assets/css/noscript.css" /></noscript>
+
+
+    <style>
+        .daniel
+        {
+            margin-left:auto;
+            margin-right:auto;
+            width:60rem;
+
+            background-color: rgba(111, 142, 174,0.75);
+
+            margin-top: 5rem;
+            padding:2rem;
+        }
+
+        .daniel-top
+        {
+            overflow: scroll;
+            width:100%;
+            height:100%;
+        }
+
+        .daniel-title
+        {
+          text-align:center;
+          padding: 0.5rem !important;
+
+          background-color: rgba(40, 40, 40,0.4);
+        }
+
+        .daniel h1::after
+        {
+          content:none;
+        }
+
+        .daniel ul
+        {
+          padding:3rem 0 0rem 0;
+          margin:0;
+          list-style:none;
+          text-align: center;
+        }
+
+        .daniel ul li
+        {
+          display: inline;
+          padding: 0em 3rem 0 3rem;
+        }
+
+        .mygallery
+        {
+          width:100%;
+          padding: 3rem;
+        }
+
+        .mygallery .row
+        {
+          width:100%;
+        }
+
+        .mygallery .column
+        {
+          float:left;
+          width:49.9%;
+          height: 180px;
+          text-align:center;
+          vertical-align:middle;
+        }
+        .mygallery img
+        {
+          height:100%;
+          padding-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 736px)
+        {
+          .mygallery
+          {
+            display:none;
+          }
+
+          .daniel
+          {
+            width: auto;
+          }
+        }
+
+
+    </style>
+
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div class="daniel-top">
+
+        <div class="daniel daniel-title">
+          <h1><ul class="header-icon"><li class="fa-flask no-padding"></li><li>Papers</li></h1>
+        </div>
+
+          <div class="daniel content">
+              <h1>Digital Curvature Evolution for Image Segmentation</h1>
+              Curvature is an interesting prior for segmenting thin and
+              elongated objects, but its use in segmentation models poses
+              challenging problems in its approximation and optimization. We
+              propose a model that handles both issues.
+
+              <div class="mygallery">
+                <div class="row">
+                  <div class="column"><img src="content/images/papers/dcf/square-flow.gif"></img></div>
+                  <div class="column"><img src="content/images/papers/dcf/flower-flow.gif"></img></div>
+                </div>
+
+                <div class="row">
+                  <div class="column"><img src="content/images/papers/dcf/butterfly-input.png"></img></div>
+                  <div class="column"><img src="content/images/papers/dcf/butterfly-segmented.png"></img></div>
+                </div>
+
+              </div>
+
+              <ul>
+                  <li><a href="https://link.springer.com/chapter/10.1007/978-3-030-14085-4_2">Paper</a></li>
+                  <!-- <li><a href="#">Post</a></li> -->
+                  <li><a href="https://slides.com/danielmartinsantunes/digital-curvature-flow-dgci2019">Slides</a></li>
+              </ul>
+
+          </div>
+
+          <div class="daniel">
+              <h1>Combinatorics of Local Search: An Optimal 4-Local Hall's Theorem for Planar Graphs</h1>
+              The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
+              for a class of geometrical optimization problems, among them the
+              Geometrical hitting set problem.
+
+              <div class="mygallery">
+                <div class="row">
+                  <div class="column"><img src="content/images/papers/local-search/delaunay.png"></img></div>
+                  <div class="column"><img src="content/images/papers/local-search/examples-from-g-to-h3.png"></img></div>
+                </div>
+
+              </div>
+
+              <ul>
+                <li><a href="https://hal.archives-ouvertes.fr/hal-01740357">Paper</a></li>
+                <li><a href="https://itiseasytoseethat.wordpress.com/2017/07/10/4-local-search-gives-a-4-approximation-algorithm-to-the-geometric-hitting-set-problem/">Post</a></li>
+                <li><a href="https://drive.google.com/open?id=0B1FfdlgQzJvkYndTczNMWjJkbTA">Slides</a></li>
+              </ul>
+          </div>
+
+        </div>
+
+
+			<div class="top-menu">
+				<ul class="menu-icons">
+					<li><a href="/"><img src="content/images/avatar.jpg" /></a></li>
+					<!-- <li><a class="fa-address-card" href="/assets/cv2.pdf"></a></li> -->
+					<li><a class="fa-linkedin" href="https://linkedin.com/in/{{site.linkedin_username}}"></a></li>
+					<li><a class="fa-github" href="https://github.com/{{site.github_username}}"></a></li>
+					<li><a class="fa-wordpress" href="{{site.data.cover.blog_url}}"></a></li>
+				</ul>
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="content/assets/js/jquery.min.js"></script>
+			<script src="content/assets/js/browser.min.js"></script>
+			<script src="content/assets/js/breakpoints.min.js"></script>
+			<!-- <script src="content/assets/js/main.js"></script> -->
+
+	</body>
+</html>

@@ -1,4 +1,14 @@
-articles:
+papers:
+  -
+    title: Digital Curvature Evolution for Image Segmentation
+    description: >
+      Curvature is an interesting prior for segmenting thin and
+      elongated objects, but its use in segmentation models poses
+      challenging problems in its approximation and optimization. We
+      propose a model that handles both issues.
+    date: 2019-04-01
+    url: https://slides.com/danielmartinsantunes/digital-curvature-flow-dgci2019
+
   -
     title: Quality Analysis of Geometric Hitting Set.
     description: >
@@ -8,6 +18,7 @@ articles:
     date: 2017-09-01
     url: https://itiseasytoseethat.wordpress.com/2017/07/10/4-local-search-gives-a-4-approximation-algorithm-to-the-geometric-hitting-set-problem/
 
+posts:
   -
     title: Bayesian Rational in Image Processing
     description: >
@@ -32,6 +43,12 @@ projects:
     git-repo: BTools
 
   -
+    title: Digital Image Processing
+    description: Utility functions for DGtal objects.
+    date: 2019-04-01
+    git-repo: DIPaCUS
+
+  -
     title: Simple traffic simulator
     description: >
       Simulate traffic of any available map at OpenStreetMap using
@@ -48,24 +65,25 @@ projects:
 
 highlights:
   -
-    title: Quality Analysis of Geometric Hitting Set.
+    title: Digital Curvature Evolution for Image Segmentation
     icon: fa-flask
     type: paper
     bottom_link_text: More papers
-    bottom_link_url: #
+    bottom_link_url: /more-papers
     description: >
-      The simple (4,3)-local-search heuristics gives a 4-approximation algorithm
-      for a class of geometrical optimization problems, among them the
-      Geometrical hitting set problem.
-    date: 2017-09-01
-    url: https://itiseasytoseethat.wordpress.com/2017/07/10/4-local-search-gives-a-4-approximation-algorithm-to-the-geometric-hitting-set-problem/
+      Curvature is an interesting prior for segmenting thin and
+      elongated objects, but its use in segmentation models poses
+      challenging problems in its approximation and optimization. We
+      propose a model that handles both issues.
+    date: 2019-04-01
+    url: https://link.springer.com/chapter/10.1007/978-3-030-14085-4_2
 
   -
     title: Bayesian Rational in Image Processing
     icon: fa-paperclip
     type: post
     bottom_link_text: More posts
-    bottom_link_url: #
+    bottom_link_url: /more-posts
     description: >
       We give two examples of how Bayesian rational can be used to interpret
       methods on image denoising and regularization.
@@ -77,7 +95,7 @@ highlights:
     icon: fa-code
     type: coding
     bottom_link_text: More projects
-    bottom_link_url: #
+    bottom_link_url: /more-projects
     description: Improve segmentation results using curvature regularization.
     date: 2018-10-01
     url: https://github.com/danoan/BTools

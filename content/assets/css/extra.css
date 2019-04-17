@@ -1,13 +1,13 @@
 .panel > *.paper {
-  background-color: rgba(161, 192, 224,0.75);
+  background-color: rgba(111, 142, 174,0.75);
 }
 
 .panel > *.post {
-  background-color: rgba(174, 224, 161,0.75);
+  background-color: rgba(111, 174, 142,0.75);
 }
 
 .panel > *.coding {
-  background-color: rgba(224, 210, 161,0.75);
+  background-color: rgba(174, 111, 142,0.75);
 }
 
 ul.header-icon{

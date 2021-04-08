@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graph flow and Coco dataset experiment report</title>
+
+    <link rel="stylesheet" type="text/css" href="report.css"></link>
+    <script type="text/javascript" src="report.js"></script>
+
+</head>
+<body>
+
+<h1>Coco experiment report</h1>
+
+<h2>Image browsing</h2>
+
+<div class="row">
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Image ID</li>
+                
+                    <li class="button" onclick="select(this)" path="785" type="image_id">785</li>
+                
+                    <li class="button" onclick="select(this)" path="1584" type="image_id">1584</li>
+                
+                    <li class="button" onclick="select(this)" path="2149" type="image_id">2149</li>
+                
+                    <li class="button" onclick="select(this)" path="2592" type="image_id">2592</li>
+                
+                    <li class="button" onclick="select(this)" path="7784" type="image_id">7784</li>
+                
+                    <li class="button" onclick="select(this)" path="7816" type="image_id">7816</li>
+                
+                    <li class="button" onclick="select(this)" path="8532" type="image_id">8532</li>
+                
+                    <li class="button" onclick="select(this)" path="10363" type="image_id">10363</li>
+                
+                    <li class="button" onclick="select(this)" path="12639" type="image_id">12639</li>
+                
+                    <li class="button" onclick="select(this)" path="15746" type="image_id">15746</li>
+                
+                    <li class="button" onclick="select(this)" path="17031" type="image_id">17031</li>
+                
+                    <li class="button" onclick="select(this)" path="18519" type="image_id">18519</li>
+                
+                    <li class="button" onclick="select(this)" path="20247" type="image_id">20247</li>
+                
+                    <li class="button" onclick="select(this)" path="20333" type="image_id">20333</li>
+                
+                    <li class="button" onclick="select(this)" path="23359" type="image_id">23359</li>
+                
+                    <li class="button" onclick="select(this)" path="25393" type="image_id">25393</li>
+                
+                    <li class="button" onclick="select(this)" path="29393" type="image_id">29393</li>
+                
+                    <li class="button" onclick="select(this)" path="30494" type="image_id">30494</li>
+                
+                    <li class="button" onclick="select(this)" path="39769" type="image_id">39769</li>
+                
+                    <li class="button" onclick="select(this)" path="40036" type="image_id">40036</li>
+                
+                    <li class="button" onclick="select(this)" path="41990" type="image_id">41990</li>
+                
+                    <li class="button" onclick="select(this)" path="43816" type="image_id">43816</li>
+                
+                    <li class="button" onclick="select(this)" path="44652" type="image_id">44652</li>
+                
+                    <li class="button" onclick="select(this)" path="44699" type="image_id">44699</li>
+                
+                    <li class="button" onclick="select(this)" path="46804" type="image_id">46804</li>
+                
+                    <li class="button" onclick="select(this)" path="46872" type="image_id">46872</li>
+                
+                    <li class="button" onclick="select(this)" path="48924" type="image_id">48924</li>
+                
+                    <li class="button" onclick="select(this)" path="50638" type="image_id">50638</li>
+                
+                    <li class="button" onclick="select(this)" path="50679" type="image_id">50679</li>
+                
+                    <li class="button" onclick="select(this)" path="50811" type="image_id">50811</li>
+                
+                    <li class="button" onclick="select(this)" path="51610" type="image_id">51610</li>
+                
+                    <li class="button" onclick="select(this)" path="52017" type="image_id">52017</li>
+                
+                    <li class="button" onclick="select(this)" path="52462" type="image_id">52462</li>
+                
+                    <li class="button" onclick="select(this)" path="52565" type="image_id">52565</li>
+                
+                    <li class="button" onclick="select(this)" path="54123" type="image_id">54123</li>
+                
+                    <li class="button" onclick="select(this)" path="55950" type="image_id">55950</li>
+                
+                    <li class="button" onclick="select(this)" path="65736" type="image_id">65736</li>
+                
+                    <li class="button" onclick="select(this)" path="82846" type="image_id">82846</li>
+                
+                    <li class="button" onclick="select(this)" path="95843" type="image_id">95843</li>
+                
+                    <li class="button" onclick="select(this)" path="96549" type="image_id">96549</li>
+                
+                    <li class="button" onclick="select(this)" path="101420" type="image_id">101420</li>
+                
+                    <li class="button" onclick="select(this)" path="102331" type="image_id">102331</li>
+                
+                    <li class="button" onclick="select(this)" path="102820" type="image_id">102820</li>
+                
+                    <li class="button" onclick="select(this)" path="104619" type="image_id">104619</li>
+                
+                    <li class="button" onclick="select(this)" path="106330" type="image_id">106330</li>
+                
+                    <li class="button" onclick="select(this)" path="106881" type="image_id">106881</li>
+                
+                    <li class="button" onclick="select(this)" path="109827" type="image_id">109827</li>
+                
+                    <li class="button" onclick="select(this)" path="109900" type="image_id">109900</li>
+                
+                    <li class="button" onclick="select(this)" path="110359" type="image_id">110359</li>
+                
+                    <li class="button" onclick="select(this)" path="112798" type="image_id">112798</li>
+                
+                    <li class="button" onclick="select(this)" path="112997" type="image_id">112997</li>
+                
+                    <li class="button" onclick="select(this)" path="114871" type="image_id">114871</li>
+                
+                    <li class="button" onclick="select(this)" path="117197" type="image_id">117197</li>
+                
+                    <li class="button" onclick="select(this)" path="118209" type="image_id">118209</li>
+                
+                    <li class="button" onclick="select(this)" path="118367" type="image_id">118367</li>
+                
+                    <li class="button" onclick="select(this)" path="119233" type="image_id">119233</li>
+                
+                    <li class="button" onclick="select(this)" path="119677" type="image_id">119677</li>
+                
+                    <li class="button" onclick="select(this)" path="122046" type="image_id">122046</li>
+                
+                    <li class="button" onclick="select(this)" path="122927" type="image_id">122927</li>
+                
+                    <li class="button" onclick="select(this)" path="123213" type="image_id">123213</li>
+                
+                    <li class="button" onclick="select(this)" path="125405" type="image_id">125405</li>
+                
+                    <li class="button" onclick="select(this)" path="126107" type="image_id">126107</li>
+                
+                    <li class="button" onclick="select(this)" path="128654" type="image_id">128654</li>
+                
+                    <li class="button" onclick="select(this)" path="129113" type="image_id">129113</li>
+                
+                    <li class="button" onclick="select(this)" path="134689" type="image_id">134689</li>
+                
+                    <li class="button" onclick="select(this)" path="135902" type="image_id">135902</li>
+                
+                    <li class="button" onclick="select(this)" path="138115" type="image_id">138115</li>
+                
+                    <li class="button" onclick="select(this)" path="138492" type="image_id">138492</li>
+                
+                    <li class="button" onclick="select(this)" path="139872" type="image_id">139872</li>
+                
+                    <li class="button" onclick="select(this)" path="142324" type="image_id">142324</li>
+                
+                    <li class="button" onclick="select(this)" path="142585" type="image_id">142585</li>
+                
+                    <li class="button" onclick="select(this)" path="143961" type="image_id">143961</li>
+                
+                    <li class="button" onclick="select(this)" path="144114" type="image_id">144114</li>
+                
+                    <li class="button" onclick="select(this)" path="144300" type="image_id">144300</li>
+                
+                    <li class="button" onclick="select(this)" path="144333" type="image_id">144333</li>
+                
+                    <li class="button" onclick="select(this)" path="145591" type="image_id">145591</li>
+                
+                    <li class="button" onclick="select(this)" path="145620" type="image_id">145620</li>
+                
+                    <li class="button" onclick="select(this)" path="147725" type="image_id">147725</li>
+                
+                    <li class="button" onclick="select(this)" path="148707" type="image_id">148707</li>
+                
+                    <li class="button" onclick="select(this)" path="148719" type="image_id">148719</li>
+                
+                    <li class="button" onclick="select(this)" path="148957" type="image_id">148957</li>
+                
+                    <li class="button" onclick="select(this)" path="149568" type="image_id">149568</li>
+                
+                    <li class="button" onclick="select(this)" path="149622" type="image_id">149622</li>
+                
+                    <li class="button" onclick="select(this)" path="151516" type="image_id">151516</li>
+                
+                    <li class="button" onclick="select(this)" path="152120" type="image_id">152120</li>
+                
+                    <li class="button" onclick="select(this)" path="153299" type="image_id">153299</li>
+                
+                    <li class="button" onclick="select(this)" path="153343" type="image_id">153343</li>
+                
+                    <li class="button" onclick="select(this)" path="154947" type="image_id">154947</li>
+                
+                    <li class="button" onclick="select(this)" path="155291" type="image_id">155291</li>
+                
+                    <li class="button" onclick="select(this)" path="155341" type="image_id">155341</li>
+                
+                    <li class="button" onclick="select(this)" path="155571" type="image_id">155571</li>
+                
+                    <li class="button" onclick="select(this)" path="157365" type="image_id">157365</li>
+                
+                    <li class="button" onclick="select(this)" path="158945" type="image_id">158945</li>
+                
+                    <li class="button" onclick="select(this)" path="158956" type="image_id">158956</li>
+                
+                    <li class="button" onclick="select(this)" path="160772" type="image_id">160772</li>
+                
+                    <li class="button" onclick="select(this)" path="161032" type="image_id">161032</li>
+                
+                    <li class="button" onclick="select(this)" path="167902" type="image_id">167902</li>
+                
+                    <li class="button" onclick="select(this)" path="172595" type="image_id">172595</li>
+                
+                    <li class="button" onclick="select(this)" path="172977" type="image_id">172977</li>
+                
+                    <li class="button" onclick="select(this)" path="173091" type="image_id">173091</li>
+                
+                    <li class="button" onclick="select(this)" path="175443" type="image_id">175443</li>
+                
+                    <li class="button" onclick="select(this)" path="1425" type="image_id">1425</li>
+                
+                    <li class="button" onclick="select(this)" path="2157" type="image_id">2157</li>
+                
+                    <li class="button" onclick="select(this)" path="3501" type="image_id">3501</li>
+                
+                    <li class="button" onclick="select(this)" path="5600" type="image_id">5600</li>
+                
+                    <li class="button" onclick="select(this)" path="6614" type="image_id">6614</li>
+                
+                    <li class="button" onclick="select(this)" path="8629" type="image_id">8629</li>
+                
+                    <li class="button" onclick="select(this)" path="13597" type="image_id">13597</li>
+                
+                    <li class="button" onclick="select(this)" path="15254" type="image_id">15254</li>
+                
+                    <li class="button" onclick="select(this)" path="18575" type="image_id">18575</li>
+                
+                    <li class="button" onclick="select(this)" path="19221" type="image_id">19221</li>
+                
+                    <li class="button" onclick="select(this)" path="24567" type="image_id">24567</li>
+                
+                    <li class="button" onclick="select(this)" path="27696" type="image_id">27696</li>
+                
+                    <li class="button" onclick="select(this)" path="29675" type="image_id">29675</li>
+                
+                    <li class="button" onclick="select(this)" path="724" type="image_id">724</li>
+                
+                    <li class="button" onclick="select(this)" path="11511" type="image_id">11511</li>
+                
+                    <li class="button" onclick="select(this)" path="15272" type="image_id">15272</li>
+                
+                    <li class="button" onclick="select(this)" path="20107" type="image_id">20107</li>
+                
+                    <li class="button" onclick="select(this)" path="26926" type="image_id">26926</li>
+                
+                    <li class="button" onclick="select(this)" path="28993" type="image_id">28993</li>
+                
+                    <li class="button" onclick="select(this)" path="29397" type="image_id">29397</li>
+                
+                    <li class="button" onclick="select(this)" path="29984" type="image_id">29984</li>
+                
+                    <li class="button" onclick="select(this)" path="36861" type="image_id">36861</li>
+                
+                    <li class="button" onclick="select(this)" path="53994" type="image_id">53994</li>
+                
+                    <li class="button" onclick="select(this)" path="64495" type="image_id">64495</li>
+                
+                    <li class="button" onclick="select(this)" path="67896" type="image_id">67896</li>
+                
+                    <li class="button" onclick="select(this)" path="84477" type="image_id">84477</li>
+                
+                    <li class="button" onclick="select(this)" path="98716" type="image_id">98716</li>
+                
+                    <li class="button" onclick="select(this)" path="885" type="image_id">885</li>
+                
+                    <li class="button" onclick="select(this)" path="14439" type="image_id">14439</li>
+                
+                    <li class="button" onclick="select(this)" path="21879" type="image_id">21879</li>
+                
+                    <li class="button" onclick="select(this)" path="22479" type="image_id">22479</li>
+                
+                    <li class="button" onclick="select(this)" path="22935" type="image_id">22935</li>
+                
+                    <li class="button" onclick="select(this)" path="32081" type="image_id">32081</li>
+                
+                    <li class="button" onclick="select(this)" path="32735" type="image_id">32735</li>
+                
+                    <li class="button" onclick="select(this)" path="39480" type="image_id">39480</li>
+                
+                    <li class="button" onclick="select(this)" path="52507" type="image_id">52507</li>
+                
+                    <li class="button" onclick="select(this)" path="54592" type="image_id">54592</li>
+                
+                    <li class="button" onclick="select(this)" path="68628" type="image_id">68628</li>
+                
+                    <li class="button" onclick="select(this)" path="72281" type="image_id">72281</li>
+                
+                    <li class="button" onclick="select(this)" path="74200" type="image_id">74200</li>
+                
+                    <li class="button" onclick="select(this)" path="85665" type="image_id">85665</li>
+                
+                    <li class="button" onclick="select(this)" path="121673" type="image_id">121673</li>
+                
+                    <li class="button" onclick="select(this)" path="132544" type="image_id">132544</li>
+                
+                    <li class="button" onclick="select(this)" path="132703" type="image_id">132703</li>
+                
+                    <li class="button" onclick="select(this)" path="153669" type="image_id">153669</li>
+                
+                    <li class="button" onclick="select(this)" path="7818" type="image_id">7818</li>
+                
+                    <li class="button" onclick="select(this)" path="12576" type="image_id">12576</li>
+                
+                    <li class="button" onclick="select(this)" path="17714" type="image_id">17714</li>
+                
+                    <li class="button" onclick="select(this)" path="25986" type="image_id">25986</li>
+                
+                    <li class="button" onclick="select(this)" path="30213" type="image_id">30213</li>
+                
+                    <li class="button" onclick="select(this)" path="47112" type="image_id">47112</li>
+                
+                    <li class="button" onclick="select(this)" path="52996" type="image_id">52996</li>
+                
+                    <li class="button" onclick="select(this)" path="79651" type="image_id">79651</li>
+                
+                    <li class="button" onclick="select(this)" path="84241" type="image_id">84241</li>
+                
+                    <li class="button" onclick="select(this)" path="91615" type="image_id">91615</li>
+                
+                    <li class="button" onclick="select(this)" path="92053" type="image_id">92053</li>
+                
+                    <li class="button" onclick="select(this)" path="97022" type="image_id">97022</li>
+                
+                    <li class="button" onclick="select(this)" path="102707" type="image_id">102707</li>
+                
+                    <li class="button" onclick="select(this)" path="104669" type="image_id">104669</li>
+                
+                    <li class="button" onclick="select(this)" path="109976" type="image_id">109976</li>
+                
+                    <li class="button" onclick="select(this)" path="116206" type="image_id">116206</li>
+                
+                    <li class="button" onclick="select(this)" path="136355" type="image_id">136355</li>
+                
+                    <li class="button" onclick="select(this)" path="1993" type="image_id">1993</li>
+                
+                    <li class="button" onclick="select(this)" path="4495" type="image_id">4495</li>
+                
+                    <li class="button" onclick="select(this)" path="16958" type="image_id">16958</li>
+                
+                    <li class="button" onclick="select(this)" path="21465" type="image_id">21465</li>
+                
+                    <li class="button" onclick="select(this)" path="24610" type="image_id">24610</li>
+                
+                    <li class="button" onclick="select(this)" path="27620" type="image_id">27620</li>
+                
+                    <li class="button" onclick="select(this)" path="29596" type="image_id">29596</li>
+                
+                    <li class="button" onclick="select(this)" path="31248" type="image_id">31248</li>
+                
+                    <li class="button" onclick="select(this)" path="31735" type="image_id">31735</li>
+                
+                    <li class="button" onclick="select(this)" path="39477" type="image_id">39477</li>
+                
+                    <li class="button" onclick="select(this)" path="41872" type="image_id">41872</li>
+                
+                    <li class="button" onclick="select(this)" path="47769" type="image_id">47769</li>
+                
+                    <li class="button" onclick="select(this)" path="50828" type="image_id">50828</li>
+                
+                    <li class="button" onclick="select(this)" path="68833" type="image_id">68833</li>
+                
+                    <li class="button" onclick="select(this)" path="74209" type="image_id">74209</li>
+                
+                    <li class="button" onclick="select(this)" path="81061" type="image_id">81061</li>
+                
+                    <li class="button" onclick="select(this)" path="27982" type="image_id">27982</li>
+                
+                    <li class="button" onclick="select(this)" path="32285" type="image_id">32285</li>
+                
+                    <li class="button" onclick="select(this)" path="34760" type="image_id">34760</li>
+                
+                    <li class="button" onclick="select(this)" path="35770" type="image_id">35770</li>
+                
+                    <li class="button" onclick="select(this)" path="38070" type="image_id">38070</li>
+                
+                    <li class="button" onclick="select(this)" path="66841" type="image_id">66841</li>
+                
+                    <li class="button" onclick="select(this)" path="104572" type="image_id">104572</li>
+                
+                    <li class="button" onclick="select(this)" path="127182" type="image_id">127182</li>
+                
+                    <li class="button" onclick="select(this)" path="136466" type="image_id">136466</li>
+                
+                    <li class="button" onclick="select(this)" path="1296" type="image_id">1296</li>
+                
+                    <li class="button" onclick="select(this)" path="9400" type="image_id">9400</li>
+                
+                    <li class="button" onclick="select(this)" path="13659" type="image_id">13659</li>
+                
+                    <li class="button" onclick="select(this)" path="36660" type="image_id">36660</li>
+                
+                    <li class="button" onclick="select(this)" path="52413" type="image_id">52413</li>
+                
+                    <li class="button" onclick="select(this)" path="53909" type="image_id">53909</li>
+                
+                    <li class="button" onclick="select(this)" path="66635" type="image_id">66635</li>
+                
+                    <li class="button" onclick="select(this)" path="97337" type="image_id">97337</li>
+                
+                    <li class="button" onclick="select(this)" path="120420" type="image_id">120420</li>
+                
+                    <li class="button" onclick="select(this)" path="19742" type="image_id">19742</li>
+                
+                    <li class="button" onclick="select(this)" path="23023" type="image_id">23023</li>
+                
+                    <li class="button" onclick="select(this)" path="31050" type="image_id">31050</li>
+                
+                    <li class="button" onclick="select(this)" path="32610" type="image_id">32610</li>
+                
+                    <li class="button" onclick="select(this)" path="95786" type="image_id">95786</li>
+                
+                    <li class="button" onclick="select(this)" path="96001" type="image_id">96001</li>
+                
+                    <li class="button" onclick="select(this)" path="99182" type="image_id">99182</li>
+                
+                    <li class="button" onclick="select(this)" path="112626" type="image_id">112626</li>
+                
+                    <li class="button" onclick="select(this)" path="132375" type="image_id">132375</li>
+                
+                    <li class="button" onclick="select(this)" path="154431" type="image_id">154431</li>
+                
+                    <li class="button" onclick="select(this)" path="161008" type="image_id">161008</li>
+                
+                    <li class="button" onclick="select(this)" path="167240" type="image_id">167240</li>
+                
+                    <li class="button" onclick="select(this)" path="180751" type="image_id">180751</li>
+                
+                    <li class="button" onclick="select(this)" path="213224" type="image_id">213224</li>
+                
+            </ul>
+        </div>
+    
+
+</div>
+
+<div class="display">
+    <div class="display-1 full active">
+
+        <div class="coco-annotation">
+            <img src="invalid.png" onclick="open_src(this)" onerror="this.src='invalid.png'" /><br>
+            Coco Annotation
+        </div>
+
+        <div class="gc-seg">
+            <img src="invalid.png" img_seq="0" onclick="open_src(this)" onerror="this.src='invalid.png'" /><br>
+            Graph Cut Segmentation
+        </div>
+
+        <div class="corrected-seg-with-data">
+            <img src="invalid.png" onclick="open_src(this)" onerror="this.src='invalid.png'" /><br>
+            Corrected Segmentation With Data
+        </div>
+
+        <div class="corrected-seg-without-data">
+            <img src="invalid.png" onclick="open_src(this)" onerror="this.src='invalid.png'" /><br>
+            Corrected Segmentation Without Data
+        </div>
+    </div>
+
+    <h2>Statistics</h2>
+    
+    <div class="statistics">
+        <img src="data/box-plot-mixed.png" class="miniature" onclick="open_src(this)" onerror="this.src='data/box-plot-mixed.png'" />
+        <img src="data/box-plot-correction.png" class="miniature" onclick="open_src(this)" onerror="this.src='data/box-plot-correction.png'" />
+        <img src="data/Mixed.png" class="miniature" onclick="open_src(this)" onerror="this.src='data/Mixed.png'" /><br>
+    </div>
+
+</div>
+
+</body>
+</html>

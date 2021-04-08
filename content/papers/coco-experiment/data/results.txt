@@ -1,0 +1,6 @@
+(Precision) ccd better than ccnd: 0.3175
+  (Recall) ccd better than ccnd: 0.7156
+  (Mixed) ccd better than ccnd: 0.8626
+(Precision) ccd better than gc: 0.4123
+  (Recall) ccd better than gc: 0.6398
+  (Mixed) ccd better than gc: 0.3934

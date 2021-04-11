@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parameter tuning report</title>
+
+    <link rel="stylesheet" type="text/css" href="report.css"></link>
+    <script type="text/javascript" src="report.js"></script>
+
+</head>
+<body>
+    <h1>Parameter tuning report</h1>
+
+<div class="table">
+<div class="row">
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Radius</li>
+                
+                    <li class="button" onclick="select(this)" path="radius_5" type="radius">5</li>
+                
+                    <li class="button" onclick="select(this)" path="radius_9" type="radius">9</li>
+                
+                    <li class="button" onclick="select(this)" path="radius_16" type="radius">16</li>
+                
+            </ul>
+        </div>
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Opt Band</li>
+                
+                    <li class="button" onclick="select(this)" path="opt_band_5" type="opt_band">5</li>
+                
+            </ul>
+        </div>
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Neigh Size</li>
+                
+                    <li class="button" onclick="select(this)" path="neigh_size_0" type="neigh_size">0</li>
+                
+                    <li class="button" onclick="select(this)" path="neigh_size_2" type="neigh_size">2</li>
+                
+                    <li class="button" onclick="select(this)" path="neigh_size_4" type="neigh_size">4</li>
+                
+            </ul>
+        </div>
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Length Penalization</li>
+                
+                    <li class="button" onclick="select(this)" path="len_pen_0.00000" type="lenght_pen">0</li>
+                    <li class="button" onclick="select(this)" path="len_pen_10.00000" type="lenght_pen">10</li>
+                    <li class="button" onclick="select(this)" path="len_pen_100.00000" type="lenght_pen">100</li>
+                
+            </ul>
+        </div>
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Data Term</li>
+                
+                    <li class="button" onclick="select(this)" path="data_term0.00000" type="data_term">0</li>
+                
+                    <li class="button" onclick="select(this)" path="data_term1.00000" type="data_term">1</li>
+                
+                    <li class="button" onclick="select(this)" path="data_term2.00000" type="data_term">2</li>
+                
+                    <li class="button" onclick="select(this)" path="data_term5.00000" type="data_term">5</li>
+                
+            </ul>
+        </div>
+    
+        <div class="collumn" menu>
+            <ul>
+                <li class="header">Curvature Term</li>
+                
+                    <li class="button" onclick="select(this)" path="curvature_term0.00000" type="curvature_term">0</li>
+                
+                    <li class="button" onclick="select(this)" path="curvature_term1.00000" type="curvature_term">1</li>
+                
+                    <li class="button" onclick="select(this)" path="curvature_term2.00000" type="curvature_term">2</li>
+                
+                    <li class="button" onclick="select(this)" path="curvature_term5.00000" type="curvature_term">5</li>
+                
+            </ul>
+        </div>
+    
+</div>
+</div>
+
+<div class="display">
+    <div class="display-1 full active">
+
+        <div class="seeds">
+            <img src="radius_5/opt_band_5/neigh_size_0/len_pen_0.00000/data_term0.00000/curvature_term1.00000/seeds.png" /><br>
+            Input seeds
+        </div>
+
+        <div class="grabcut-seg">
+            <img src="radius_5/opt_band_5/neigh_size_0/len_pen_0.00000/data_term0.00000/curvature_term1.00000/gc-seg.png" /><br>
+            Grabcut segmentation
+        </div>
+
+        <div class="corrected-seg">
+            <img src="invalid.png" onclick="open_src(this)" onerror="this.src='invalid.png'" /><br>
+            Contour correction via graph-flow
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

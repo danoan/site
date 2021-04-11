@@ -1,0 +1,20 @@
+GrabcutObject filepath:/home/daniel/Projects/Git/graph-flow/lab/experiments/seg/coala/input/gc-object.xml
+Balance coefficient disk radius:5
+Validation disk radius:5
+Data weight candidate:0
+Curvature weight candidate:5
+Data weight validation:0
+Curvature weight validation:5
+Length penalization:0
+Opt band:5
+Neighborhood size:2
+Neighborhood type:morphologyGrabcut iterations:1
+Iterations:30
+Validation weight mode:automatic-correction-length-data
+
+Save figures:False
+Display flow:False
+Print energy value:False
+Max number of threads:8
+Grabcut filepath:/home/daniel/Projects/Git/graph-flow/lab/experiments/seg/coala/input/gc-object.xml
+Output folder:/home/daniel/Projects/Git/graph-flow/lab/experiments/seg/coala/output/radius_5/opt_band_5/neigh_size_2/len_pen_0.00000/data_term0.00000/curvature_term5.00000

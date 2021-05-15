@@ -1,61 +1,62 @@
 :root{
-  --pallete-1: #00A841;
-  --pallete-2: #1458CF;
-  --pallete-3: white;
-  --pallete-4: chocolate;
+  --pallete-1: #00520c;
+  --pallete-2: #f5c800;
+  --pallete-3: #ddecdd;
+  --pallete-4: #1e5fba;
+  --pallete-5: white;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: ubuntu;
+  src: url(Ubuntu-Bold.ttf);
+  font-weight: bold;
 }
 
 body{
   text-align: center;
   margin: 0;
   padding: 0;
+
+  background-color: var(--pallete-3);
+  font-family: ubuntu;
 }
 
-.main-container{
-  width: 100%;
-  height: 520px;
-
-  text-align: center;
-  padding: 0;
-  margin: 0;
-
-  top: calc(50% - 210px);
-  position: absolute;
-}
-
-.display-text{
-  width: 100%;
-  height: 64px;
-  
-  font-size: 32px;
-  background-color: white;
-  color: var(--pallete-2);
-}
-
-.button-container{
-  margin-top: 16px;
-  height: 64px;
+.bottom-status{
+  font-size: 24px;
+  color: var(--pallete-4);
+  margin-top:24px;
 }
 
 .button{
-  font-size: 32px;
+  font-size: 20px;
   display: inline-block;
   cursor: pointer;
   margin: 0 10px;
   padding: 10px;
   background-color: var(--pallete-2);
-  color: var(--pallete-3);
+  color: var(--pallete-5);
 }
 
-.status{
-  font-size: 32px;
-  color: var(--pallete-4);
-  margin-top:32px;
+.container-buttons{
+  margin-top: 16px;
+  height: 64px;
 }
 
-.hexagon-container{
+.container-hexagons{
   --h-color: var(--pallete-1);
-  --h-width-plus-margin: 90px;
+  --h-width-plus-margin: 60px;
   --h-side-plus-margin: calc(0.577350269*var(--h-width-plus-margin));
   --h-theight-plus-margin: calc(0.288675134*var(--h-width-plus-margin));
 
@@ -68,6 +69,36 @@ body{
   text-align:left;
   position:relative;
   left: calc(50% - calc(1.5*var(--h-width-plus-margin)));
+}
+
+.container-main{
+  width: 100%;
+  height: 520px;
+
+  text-align: center;
+  padding: 0;
+  margin: 20px auto 0 auto;
+
+  position: absolute;
+}
+
+.container-words{
+  width: 278px;
+  border: 1px solid var(--pallete-4);
+  margin: 5px auto 5px auto;
+  padding: 10px;
+  overflow: auto;
+  min-height: 32px;
+}
+
+.display-text{
+  width: 100%;
+  height: 64px;
+  
+  font-size: 32px;
+  font-weight: lighter;
+  background-color: var(--pallete-3);
+  color: var(--pallete-4);
 }
 
 .hexagon {
@@ -138,33 +169,24 @@ body{
   left: calc(50% - 12px);
   top: calc(50% - 16px);
   font-size: 32px;
+  font-weight: lighter;
   z-index: 100;
 
-  color:white;
+  color: var(--pallete-5);
 }
 
-.up-status{
+.top-status{
   width: 300px;
   text-align: left;
   margin:auto;
 }
 
-.up-status span{
-  font-weight: bold;
+.top-status span{
   color: var(--pallete-4);
 }
 
-.words-container{
-  width: 278px;
-  border: 1px solid var(--pallete-4);
-  margin: 5px auto 5px auto;
-  padding: 10px;
-  overflow: auto;
-  min-height: 32px;
-}
-
 .words-found{
-  width: 1000px;
+  width: 10000px;
 }
 
 .words-found ul{
@@ -178,3 +200,4 @@ body{
   float: left;
   margin-left: 10px;
 }
+

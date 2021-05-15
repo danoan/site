@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Spelling bee</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <div class="container-main">
+
+    <div class="top-status">
+      <span id="missing-words">Missing words:</span>
+      <div class="container-words">
+        <div class="words-found">
+          <ul id="words-list">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="display-text" id="display-text"></div>
+
+    <div class="container-hexagons">
+      
+      <div class="hexagon hexagon-pos-1" onclick="control.click_letter('h')">
+        <div class="letter-hex">h</div>
+      </div>
+      
+      <div class="hexagon hexagon-pos-2" onclick="control.click_letter('i')">
+        <div class="letter-hex">i</div>
+      </div>
+      
+      <div class="hexagon hexagon-pos-3" onclick="control.click_letter('n')">
+        <div class="letter-hex">n</div>
+      </div>
+      
+      <div class="hexagon hexagon-pos-4" onclick="control.click_letter('o')">
+        <div class="letter-hex">o</div>
+      </div>
+      
+      <div class="hexagon hexagon-pos-5" onclick="control.click_letter('p')">
+        <div class="letter-hex">p</div>
+      </div>
+      
+      <div class="hexagon hexagon-pos-6" onclick="control.click_letter('r')">
+        <div class="letter-hex">r</div>
+      </div>
+      
+      <div class="hexagon hexagon-pos-7" onclick="control.click_letter('s')">
+        <div class="letter-hex">s</div>
+      </div>
+      
+
+    </div>
+
+    <div class="container-buttons">
+      <div class="button" onclick="control.erase_letter()">Erase</div>
+      <div class="button" onclick="control.hint()">Hint</div>
+      <div class="button" onclick="control.check_word()">Check</div>
+    </div>
+
+    <div class="bottom-status" id="bottom-status">
+
+    </div>
+
+  </div>
+</body>
+
+</html>
